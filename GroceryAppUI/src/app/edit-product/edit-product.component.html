@@ -1,0 +1,95 @@
+<div class="marginResult">
+
+    <h3 class="text-center">Edit Product</h3>
+
+</div>
+
+<div class="container col-md-5">
+
+    <div class="card">
+
+        <div class="card-body">
+
+            <div *ngIf="product">
+
+                <form (ngSubmit)="updateProduct()">
+
+                    <div *ngIf="false" class="form-group">
+
+                        <input type="number" [(ngModel)]="product.id" name="id" class="form-control">
+
+                    </div>
+                  
+                    <div *ngIf="false" class="form-group">
+
+                        <input type="text" [(ngModel)]="product.productCategory.id" name="product.productCategory.id"
+                            class="form-control">
+
+                    </div>
+                  
+                    <div *ngIf="false" class="form-group">
+
+                        <input type="text" [(ngModel)]="product.offer.id" name="product.offer.id" class="form-control">
+
+                    </div>
+                   
+
+
+                    <div class="form-group">
+
+                        <label for="exampleFormControlInput1"><b>Title</b></label>
+
+                        <input type="text" [(ngModel)]="product.title" name="title" class="form-control">
+
+                    </div>
+                    &nbsp;
+                    <div class="form-group">
+
+                        <label for="exampleFormControlInput1"><b>Description</b></label>
+
+                        <input type="text" [(ngModel)]="product.description" name="description" class="form-control">
+
+                    </div>
+                    &nbsp;
+                    <div class="form-group">
+
+                        <label><b>Price</b></label>
+
+                        <input type="number" [(ngModel)]="product.price" name="price" class="form-control">
+
+                    </div>
+                    &nbsp;
+                    <div class="form-group">
+
+                        <label><b>Quantity</b></label>
+
+                        <input type="number" [(ngModel)]="product.quantity" name="quantity" class="form-control">
+
+                    </div>
+                    &nbsp;
+                    <div class="form-group">
+
+                        <label><b>Image URL</b></label>
+
+                        <input type="text" [(ngModel)]="product.imageName" name="imageName" class="form-control py-6">
+
+                    </div>
+
+
+                 
+                   &nbsp;
+
+                    <div>
+
+                        <button type="submit" class="btn btn-outline-primary d-flex">Update Product</button>
+                    </div>
+                </form>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
